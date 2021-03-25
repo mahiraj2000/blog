@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background:rgb(192, 228, 250);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+
+  h2{
+      font-family: 'Courier New', Courier, monospace;
+      color: lightcoral;
+      background-color: lightslategray;
+      
+  }
+label{
+    
+   font-size: 200%;
+   
+}
+
+h3{
+  color: crimson;
+  
+  font: bold;
+}
