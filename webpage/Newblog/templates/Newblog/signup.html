@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UserCreationsForm</title>
+</head>
+<body>
+<form method="post">
+{% csrf_token %} 
+{{sign.as_p}}
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
