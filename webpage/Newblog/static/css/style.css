@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+    background-color: rgb(116, 157, 157);
+    
+  }
+
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: rgb(97, 55, 55);
+  }
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+ 
+
+
+  
+
+
+
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Registration</title>
+{% load static%}
+<link rel="stylesheet" href={%static 'css/style.css'%}>
+</head>
+
+<body> 
+<div class="header">
+  <h2>Technology</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Artificial intelligence</h2>
+      <h5> march 7, 2021</h5>
+      <div class="fakeimg" style="height:200px;"><img src='{% static "image/download(2).jpeg" %}'></div>
+      <p>s intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. The distinction between the former and the latter categories is often revealed by the acronym chosen. 'Strong' AI is usually labelled as AGI (Artificial General Intelligence) while attempts to emulate 'natural' intelligence have been called ABI (Artificial Biological Intelligence). Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.[3] Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving".</p>
+      <form method="POST" >
+      {% csrf_token %}
+      {{forms}}
+      <input type="submit" value="submit" >
+
+      </form>
+    </div>
+    <div class="card">
+      <h2>History</h2>
+      <h5> march 30,2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Thought-capable artificial beings appeared as storytelling devices in antiquity,[37] and have been common in fiction, as in Mary Shelley's Frankenstein or Karel Čapek's R.U.R.[38] These characters and their fates raised many of the same issues now discussed in the ethics of artificial intelligence.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;"><img src='{% static "image/download(2).jpeg" %}'></div>
+      <p></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><img src='{% static "image/download(2).jpeg" %}'></div><br>
+      
+    </div>
+    <div class="card">
+      <a href="{% url 'register' %}"><h3>FOR REGISTRATIONS<h3></a>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
