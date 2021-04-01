@@ -1,4 +1,4 @@
-"""Myblog URL Configuration
+"""forLearn URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,14 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from miniblog import views
+from learning import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('about/',views.about,name='about'),
-    path('contact/',views.contact,name='contact'),
-    path('signup/',views.use_signup,name='signup'),
-    path('login/',views.user_login,name='login'),
-    path('logout/',views.user_logout,name='logout'),
-    path('post/',views.user_post,name='PostAndComment'),
+    path('set/',views.setsession),
+    path('get/',views.getsession),
+    path('del/',views.delsession),
 ]
